@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirada de Tarot Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lecturas de Tarot Interactivas</h1>
+    </header>
+
+        <div class="icon-container">
+            <img src="icon-tarot.png" alt="Icono de Tarot" class="icon">
+        </div>
+        <h2>Selecciona tu modo de tirada</h2>
+        <div class="modes">
+            <div class="mode-icon" onclick="startReading('celtic')">Tirada Celta</div>
+            <div class="mode-icon" onclick="startReading('star')">Tirada Estrella</div>
+            <div class="mode-icon" onclick="startReading('threeCard')">Tirada de Tres Cartas</div>
+            <div class="mode-icon" onclick="startReading('pastPresentFuture')">Pasado, Presente, Futuro</div>
+            <div class="mode-icon" onclick="startReading('fiveCard')">Tirada de Cinco Cartas</div>
+            <div class="mode-icon" onclick="startReading('horseshoe')">Tirada Herradura</div>
+            <div class="mode-icon" onclick="startReading('relationship')">Tirada de Relación</div>
+        </div>
+
+        <main>
+            <h2 id="readingTitle">Seleccione un modo de tirada</h2>
+            <div id="readingArea" class="reading-area"></div>
+            <div id="cardCounter" class="card-counter">Cartas restantes: 0</div>
+        </main>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
